@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 class FenwickTree2D:
     def __init__(self):
         self.m = 0
@@ -53,4 +52,4 @@ if __name__=='__main__':
 
     ft = FenwickTree2D()
     ft.constructTree(test2)
-    print(ft.GetSum(2,2,3,4))
+    print(ft.getSum(2,2,3,4))
