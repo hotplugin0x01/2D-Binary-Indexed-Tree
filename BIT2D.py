@@ -48,7 +48,7 @@ class BIT2D:
             x -= (x & (-x))
         return total
  
-    def getSum(self, x1, y1, x2, y2):
+    def query(self, x1, y1, x2, y2):
         """AreaSum = Sum(OD) - Sum(OB) - Sum(OC) + Sum(OA)"""
         sumOfSubMatrix = self.__calculateSum(x2,y2) - self.__calculateSum(x2, y1 - 1) - self.__calculateSum(x1 - 1, y2) + self.__calculateSum(x1 - 1,y1 - 1)
         return sumOfSubMatrix
@@ -77,4 +77,4 @@ if __name__=='__main__':
 
     ft = BIT2D()
     ft.constructTree(matrix)
-    print(ft.getSum(2,2,3,4))
+    print(ft.query(2,2,3,4))
