@@ -5,7 +5,7 @@
 It was first used for data compression. In competitive programming, it is often used for storing frequencies and manipulating cumulative frequency tables.
 Binary Indexed Tree can be generalized into mutiple dimensions. So, **2D-Binary Indexed Tree** was proposed by [Pushkar Mishra](https://arxiv.org/pdf/1311.6093.pdf).
 2D-BIT is nothing but an array of 1D-BIT. It is basically used to solve the problem of updating and querying sub-arrays of two-dimensional arrays. 
-The idea and working of 2D-BIT is same as 1D-BIT but you work with x and y co-ordinates. You can read more from [this](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/) article. Presentation slide are also available [here](./assets/pptSlides.pdf)
+The idea and working of 2D-BIT is same as 1D-BIT but you work with x and y co-ordinates. You can read more from [this](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/) article. Presentation slide are also available [here](./assets/pptSlides.pdf).
 
 ## Working
 2D-BIT is just a BIT of mutiple BITs. It works same as 1D-BIT but you work in two dimensions so, you have two loops for each co-ordinate.
