@@ -14,7 +14,7 @@ Let's see an example.
 <!--Matrix Pic-->
 ![Matrix Example](./assets/matrix.png)
 
-Consider a matrix of size 4x4 as given above. We want to find **Sum** of sub-matrix highlighted in red box. Here, [principle of inclusion-exclusion](https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle) will be used. First, we calculate the sum from origin to the upmost point. Then, using inclusion-exclusion principle, we subtract the sum of extra parts of matrix. Idea of calculating sum is same as 1D-BIT. For example, we accumulate sum in a variable and subtract 1 bit from given position and descend down the array. **Update** is also same as 1D-BIT like we add 1 bit to given position and climb up the array. The only changing is that we do this work with rows and columns.
+Consider a matrix of size 3x4 as given above. We want to find **Sum** of sub-matrix ((2,2), (3,4)) highlighted in red box. First, we calculate the sum from origin to the upmost point. Then, using [inclusion-exclusion principle](https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle), we exclude the sum of extra parts of matrix. Idea of calculating sum is same as 1D-BIT. For example, we accumulate sum in a variable and subtract 1 bit from given position and descend the array. **Update** is also same as 1D-BIT like we add 1 bit to given position and climb up the array. The only change is that we do this work in both responsible rows and columns.
 
 ## Complexity
 - Update : O(logMN) (Where M and N are size of matrix)
